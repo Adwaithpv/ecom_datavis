@@ -68,8 +68,16 @@ function App() {
             />
           </div>
 
-          <div className="mb-5">
-            <TableauEmbed />
+          <div className="mb-5 flex flex-col gap-5">
+            <TableauEmbed
+              viewPath="EcommerceDeliveryDashboard/Dashboard1"
+              title="Tableau: Ecommerce Delivery Dashboard"
+            />
+            <TableauEmbed
+              viewPath="DeliveryPerformance_17773564982410/Dashboard1"
+              title="Tableau: Delivery Performance"
+              blurb="Delivery performance workbook (Dashboard 1) from Tableau Public."
+            />
           </div>
 
           {/* Row 1: Monthly stacked chart + Platform breakdown */}
