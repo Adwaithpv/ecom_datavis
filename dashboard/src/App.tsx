@@ -3,6 +3,7 @@ import { KPICard } from './components/ui/KPICard';
 import { Sidebar } from './components/Sidebar';
 import { Topbar, PageHeader } from './components/Topbar';
 import { InsightsSection } from './components/InsightsSection';
+import { TableauEmbed } from './components/TableauEmbed';
 import {
   MonthlyOrdersChart, PlatformBreakdown,
   CategoryDelayTable, OrderHourChart, RefundDelayChart,
@@ -65,6 +66,10 @@ function App() {
               iconBg="bg-blue-50"
               iconColor="text-blue-500"
             />
+          </div>
+
+          <div className="mb-5">
+            <TableauEmbed />
           </div>
 
           {/* Row 1: Monthly stacked chart + Platform breakdown */}
